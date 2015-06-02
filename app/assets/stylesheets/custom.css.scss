@@ -1,37 +1,39 @@
 @import "bootstrap";
 
-/* mixins, variables, etc. */
 
-$grayMediumLight: #eaeaea;
+/* mixins, visibles, etc. */
+$lightGray: #999;
 
 /* universal */
 
-html {
+html{
   overflow-y: scroll;
 }
 
-body {
+body{
   padding-top: 60px;
 }
 
-section {
+section{
   overflow: auto;
 }
 
-textarea {
+textarea{
   resize: vertical;
 }
 
-.center {
+.center{
   text-align: center;
-  h1 {
-    margin-bottom: 10px;
-  }
+}
+
+.center h1{
+  margin-bottom: 10px;
 }
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6{
   line-height: 1;
 }
 
@@ -48,14 +50,15 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
+
   color: $grayLight;
 }
 
 p {
+
   font-size: 1.1em;
   line-height: 1.7em;
 }
-
 
 /* header */
 
@@ -63,24 +66,29 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
+
   color: white;
+
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
+
     color: white;
     text-decoration: none;
+
   }
 }
 
 /* footer */
 
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
+  border-top: 1px solid $grayLight;
   color: $grayLight;
   a {
     color: $gray;

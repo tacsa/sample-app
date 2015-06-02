@@ -13,6 +13,7 @@ describe "Static pages" do
   end
 
   describe "Help page" do
+
     before { visit help_path }
 
     it { should have_content('Help') }
@@ -31,5 +32,6 @@ describe "Static pages" do
 
     it { should have_content('Contact') }
     it { should have_title(full_title('Contact')) }
+
   end
 end
